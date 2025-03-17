@@ -10,8 +10,9 @@ function ItemRepo ({repo, handleRemoveRepo}) {
         <ItemContainer onClick={handleRemove}>
             <h3>{repo.name}</h3>
             <p>{repo.full_name}</p> 
-            <a href="{repo.html_url}" rel="noreferrer" className="remover" >Remover</a> <br />
-            <a href="{repo.html_url}" rel="noreferrer" target="blank">Ver Repositório</a> 
+
+            <button onClick={ () => handleRemoveRepo(repo.id)} rel="noreferrer" className="remover" >Remover</button> <br />
+            <a href={repo.html_url} rel="noreferrer" target="blank">Ver Repositório</a> 
 
             <hr />  
         </ItemContainer>
