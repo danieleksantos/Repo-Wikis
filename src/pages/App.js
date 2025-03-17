@@ -35,7 +35,7 @@ function App() {
   return (
     <Container>
       <img src={gitLogo} width={72} height={72} alt='logo GitHub'/>
-      <Input placeholder="seulogin/seuRepositorio" value={currentRepo} onChange={(e)=> setCurrentRepo(e.target.value)}/>
+      <Input value={currentRepo} onChange={(e)=> setCurrentRepo(e.target.value)}/>
       <Button onClick={handleSearchRepo}/>
       {repos.map(repo => (
         <ItemRepo key={repo.id} repo={repo} handleRemoveRepo={() => handleRemoveRepo(repo.id)} />
