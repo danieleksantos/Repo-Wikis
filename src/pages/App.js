@@ -32,7 +32,6 @@ function App() {
     setRepos(updatedRepos);
   };
   
-
   return (
     <Container>
       <img src={gitLogo} width={72} height={72} alt='logo GitHub'/>
